@@ -40,6 +40,7 @@
   <!-- Controller configuration -->
   <arg name="controller_config_file" default="$(find uji_ur5_gazebo)/config/ur5e_controllers.yaml" doc="Config file used for defining the ROS-Control controllers."/>
   <arg name="controllers" default="joint_state_controller eff_joint_traj_controller" doc="Controllers that are activated by default."/>
+  <!-- <arg name="controllers" default="joint_state_controller eff_joint_traj_controller palm_finger_1_position_controller finger_1_joint_1_position_controller finger_1_joint_2_position_controller finger_1_joint_3_position_controller palm_finger_2_position_controller finger_2_joint_1_position_controller finger_2_joint_2_position_controller finger_2_joint_3_position_controller finger_middle_joint_1_position_controller finger_middle_joint_2_position_controller finger_middle_joint_3_position_controller" doc="Controllers that are activated by default."/> -->
   <arg name="stopped_controllers" default="joint_group_eff_controller" doc="Controllers that are initally loaded, but not started."/>
 
   <!-- robot_state_publisher configuration -->

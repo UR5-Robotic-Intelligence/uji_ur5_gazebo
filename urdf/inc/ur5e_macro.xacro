@@ -129,6 +129,16 @@
         <!--robotNamespace>/</robotNamespace-->
         <!--robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType-->
       </plugin>
+          <!-- plugin for the RobotiQ hand -->
+      <plugin name="robotiq_hand_plugin" filename="libRobotiqHandPlugin.so">
+        <kp_position>10.0</kp_position>
+        <kd_position>0.5</kd_position>
+        <!-- Some optional parameters. Check the plugin header file for all of them. -->
+        <!--<prefix>pre_</prefix>-->
+        <!-- This is chosen, so it's compatible with the "Robotiq3FGripperSimpleController.py"-->
+        <topic_command>/Robotiq3FGripperRobotOutput</topic_command>
+        <!-- <topic_state>/hand/state</topic_state> -->
+      </plugin>
     </gazebo>
   </xacro:macro>
 </robot>
